@@ -1,0 +1,162 @@
+body {
+    font-family: 'Lato', sans-serif;
+    background:#fafcff;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/**/
+h2.title, h3.title{
+    text-align: center;
+    color: #F36E44;
+}
+/**/
+
+/**Buttons*/
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: #F36E44;
+    border-radius: 0;
+    border: 1px solid #F36E44;
+}
+
+.btn-primary:focus {
+    outline: none !important;
+    box-shadow: none;
+    background: #F36E44;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-radius: 0;
+    color: #F36E44;
+    border: 1px solid #F36E44;
+}
+
+.btn-outline-primary {
+    color: #F36E44;
+    border-radius: 0;
+    border: 1px solid #F36E44;
+}
+
+.btn-outline-primary:hover {
+    color: #FFF;
+    border-radius: 0;
+    background: #F36E44;
+    border: 1px solid #F36E44;
+}
+
+.btn-secondary {
+    background: #384850;
+    border: 1px solid #384850;
+    border-radius: 0;
+}
+
+.btn-success {
+    border-radius: 0;
+}
+
+.btn-secondary:hover {
+    color: #384850;
+    background: transparent;
+    border: 1px solid #384850;
+}
+
+.btn-outline-secondary {
+    color: #384850;
+    border-radius: 0;
+    border: 1px solid #384850;
+}
+
+
+/*End of buttons*/
+
+.footer {
+    text-align: center;
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%; */
+    background: #384850;
+    color: #FFF;
+}
+
+.login-outer-div {
+    margin-top: 150px;
+    /* padding: 30px; */
+}
+
+.login-outer-div .brand-name{
+    margin-bottom: 40px;
+}
+
+.login-form{
+    border-radius: 1px solid #e5e5e5;
+    padding: 30px 40px;
+    box-shadow: 5px 5px 5px 5px  #e5e5e5;
+}
+
+#menu-content {
+    margin-top: 80px;
+}
+
+#menu-content .menu-item {
+    text-align: center;
+    padding: 30px;
+}
+
+#menu-content .inner-menu-item {
+    border: 1px solid #e5e5e5;
+    /* width: 200px; */
+    text-align: center;
+    /* height: 200px; */
+    margin: auto;
+    /* padding-top: 50px; */
+    max-width: 350px;
+    padding: 35px;
+    background: #F36E44;
+    color: #FFF;
+}
+
+.inner-menu-item svg {
+    font-size: 4rem;
+    color: #FFF;
+}
+
+#header {
+    margin-bottom: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #384850;
+    color: #FFF;
+    border-bottom: 1px solid #222;
+}
+
+.header .brand {
+    margin-left: 10px;
+}
+
+.price-calculator-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

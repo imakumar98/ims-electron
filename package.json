@@ -1,0 +1,97 @@
+{
+  "name": "darmaltun",
+  "version": "0.1.0",
+  "private": true,
+  "homepage" : "./",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.7.1",
+    "aws-sdk": "^2.853.0",
+    "bluebird": "^3.7.2",
+    "bootstrap": "^4.6.0",
+    "concurrently": "^5.3.0",
+    "crypto": "^1.0.1",
+    "electron-is-dev": "^1.2.0",
+    "moment": "^2.29.1",
+    "node-pre-gyp": "^0.17.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "reactstrap": "^8.9.0",
+    "sqlite3": "^5.0.2",
+    "wait-on": "^5.2.1",
+    "web-vitals": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "electron-start": "electron .",
+    "eject": "react-scripts eject",
+    "postinstall": "electron-builder install-app-deps",
+    "rebuild": "electron-rebuild -f -w sqlite3",
+    "preelectron-pack": "npm run build",
+    "electron-pack": "electron-builder --win --ia32"
+  },
+  "main": "public/electron.js",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
+    "electron-builder": "^22.9.1",
+    "electron-packager": "^15.2.0",
+    "electron-rebuild": "^2.3.5",
+    "electron": "^11.2.3"
+  },
+  "author": {
+    "name": "Syed Sons",
+    "email": "info@syedsons.in",
+    "url": "http://syedsons.in"
+  },
+  "build": {
+    "appId": "com.darmaltun",
+    "productName": "Darmaltun",
+    "copyright": "Copyright © 2021 ${author}",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
